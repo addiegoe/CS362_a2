@@ -9,12 +9,9 @@ def check_pwd(pw):
         return False
     for i in pw:
         if i.islower():
-            break
-        else:
-            return False
-    for i in pw:
-        if i.isupper():
-            break
+            for i in pw:
+                if i.isupper():
+                    break
         else:
             return False
     return True
