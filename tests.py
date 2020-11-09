@@ -1,3 +1,4 @@
+# A2: TDD Testing hands-on
 # Author: Emily Addiego
 # Due Date: 11/9/20
 
@@ -18,6 +19,12 @@ class TestCase(unittest.TestCase):
         input = "BANANANA"
         self.assertFalse(check_pwd(input))
 
+    def test4(self):
+        input = "bananaananaaa"
+        self.assertFalse(check_pwd(input))
+        
+
 
 if __name__ == '__main__':
     unittest.main()
+
