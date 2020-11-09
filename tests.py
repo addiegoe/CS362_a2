@@ -22,7 +22,11 @@ class TestCase(unittest.TestCase):
     def test4(self):
         input = "bananaananaaa"
         self.assertFalse(check_pwd(input))
-        
+
+    def test5(self):
+        input = "noNumbersHere"
+        self.assertFalse(check_pwd(input))
+
 
 
 if __name__ == '__main__':
