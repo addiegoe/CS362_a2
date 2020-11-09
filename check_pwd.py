@@ -7,4 +7,9 @@ def check_pwd(pw):
         return False
     if len(pw) > 20:
         return False
+    for i in pw:
+        if i.islower():
+            break
+        else:
+            return False
     return True
